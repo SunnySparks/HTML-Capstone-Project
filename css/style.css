@@ -1,11 +1,73 @@
+@font-face { font-family: Cocofont; src: url('../cocogoose_trial-webfont.woff'); } 
+@font-face { font-family: Cocofont; font-weight: bold; src: url('../cocogoose_trial-webfont.woff2');}
+
 header {
-    height: 100px;
+    height: auto;
 }
 
-main {
-    height: 500px;
+#header-background {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
 }
+
+.coco {
+    font-family: Cocofont, sans-serif;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+#header-sub,
+h1
+    { 
+        background-image: url("../img/rorange.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 
+
+
+main {
+    height: 250px;
+    background: rgb(211,211,211);
+    background: linear-gradient(0deg, rgba(211,211,211,1) 0%, rgba(255,255,255,1) 100%); 
+}
+
 
 footer {
     height: 200px;
+}
+
+.dark-color {
+    color: #272a31;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+#box {
+    border: 2px solid white;
+    margin-top: 30px;
+    font-size: 0.7em;
+    line-height: 25px;
+}
+
+#event-date {
+    font-size: 1.5em;
+}
+#where {
+    font-size: 0.9em;
+}
+.gray-background {
+    background-image: url("../img/gray.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
 }
