@@ -12,8 +12,47 @@
     <title>Capstone Project</title>
 </head>
 <body>
-    <header class=" container-fluid" id="header-background">
-        <nav class="navbar navbar-light light-blue lighten-4">
+    <header class=" container-fluid">
+        <!--<nav class="d-inline navbar navbar-light light-blue lighten-4">
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="dark-color">
+                    <i class="fas fa-bars fa-1x"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-dark">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tickets.html" class="nav-link text-dark">Tickets</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">English</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">My page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">한글</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+    </header>
+    <main class="container" id="top-background">
+        <nav class="d-inline d-lg-none navbar navbar-light light-blue lighten-4">
             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="dark-color">
                     <i class="fas fa-bars fa-1x"></i>
@@ -50,23 +89,68 @@
                 </ul>
             </div>
         </nav>
-        <p class="coco" id="header-sub">Speak More Languages!</p>
+        <p class="lato" id="header-sub">Speak More Languages!</p>
         <h1 class="coco" id="header-title">Immersive Language Clubs in your city!</h1>
-    </header>
-    <main class="container">
         <div>
         <p class="lato" id ="box">Come and have a lot of fun in our Immersive Language Clubs!
             You will meet people from around the world, make new friends and practice your favorite language.
             With sessions available every weekend of august!
         </p>
-        <h2 class="coco text-secondary" id="event-date">2020.08.01(SAT)~30(SUN)</h2>
+        <h2 class="coco" id="event-date">2020.08.01(SAT)~30(SUN)</h2>
         <p class="lato" id="where">@ Convention center in your favorite city</p>
         </div>
     </main>
-    <section class="w-100 gray-background">
-
+    <section class="col-sm-12 gray-background">
+        <div class="overlay"></div>
+        <header>
+        <h6 class="lato text-white method">Our Method</h6>
+        <hr class="orange">
+        </header>
+        <article id="containers">
+            <div class="cont-method">
+                <i class="fas fa-language icon p-1"></i>
+                <h6 class="lato">Language Exchanges</h6>
+                <p class="text-white lato cont-text">Feel free to share your language with the rest of the participants, you never know who is eager to practice your mother language</p>
+            </div>
+            <div class="cont-method">
+                <i class="fas fa-users icon p-1"></i>
+                <h6 class="lato p-1">Cultural Immersion</h6>
+                <p class="text-white lato cont-text p-1">You will not only practice another language, but you will also get see other people's culture to know their language better</p>
+            </div>
+            <div class="cont-method">
+                <i class="fas fa-chalkboard-teacher icon p-1"></i>
+                <h6 class="lato p-1">Grammar Focused</h6>
+                <p class="text-white lato cont-text p-1">Rest assured that our participants will always correct your grammar mistakes in a polite and constructive manner while you keep up the conversation</p>
+            </div>
+            <div class="cont-method">
+                <i class="fas fa-handshake icon p-1"></i>
+                <h6 class="lato p-1">Formal and casual speech</h6>
+                <p class="text-white lato cont-text p-1">Language is not only grammar an books, learn how to express yourself in a casual manner as well</p>
+            </div>
+            <div class="cont-method">
+                <i class="fas fa-dice icon p-1"></i>
+                <h6 class="lato p-1">Fun and games!</h6>
+                <p class="text-white lato cont-text p-1">In order to make it more fun for you and us there are a lot of conversational interactive games</p>
+            </div>
+        </article>
+        <button class="btn d-lg-none p-3 justify-content-center" role="button" id="botoncito"><a href="tickets.html">Click here to join us!</a></button>
     </section>
-    <footer class="bg-secondary container-fluid"></footer>
+    <section class="col-sm-12 bg-white">
+        <header>
+            <h6 class="lato text-black method">Meet our guests</h6>
+            <hr class="orange">
+        </header>
+        <article class="guest-container">
+            <div class="img-background" id="yoona"></div>
+            <div class="guest">
+                <h6 class="lato">Im Yoon-ah - 임윤아 (Korean)</h6>
+                <p class="lato guest-info"><i>Linguistics Masters in Seoul National University</i></p>
+                <hr class="barrita ">
+                <p class="lato more-info">Yoona has spent the last 6 years sharing her methods to practice conversartional korean, she can't wait to share more of her culture and language</p>
+            </div>
+        </article>
+    </section>
+    <footer class="bg-secondary d-xs-none container-fluid"></footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

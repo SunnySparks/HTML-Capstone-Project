@@ -1,46 +1,36 @@
-@font-face { font-family: Cocofont; src: url('../cocogoose_trial-webfont.woff'); } 
-@font-face { font-family: Cocofont; font-weight: bold; src: url('../cocogoose_trial-webfont.woff2');}
-
-header {
-    height: auto;
-}
-
-#header-background {
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: auto;
-}
+@font-face { font-family: Cocogoose; src: url('../cocogoose_trial-webfont.woff'); } 
+@font-face { font-family: Cocogoose; font-weight: bold; src: url('../cocogoose_trial-webfont.woff2');}
 
 .coco {
-    font-family: Cocofont, sans-serif;
+    font-family: Cocogoose, sans-serif;
 }
 
 .lato {
     font-family: 'Lato', sans-serif;
 }
 
-#header-sub,
-h1
-    { 
-        background-image: url("../img/rorange.jpg");
-        background-size: cover;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    } 
-
-
-main {
-    height: 250px;
-    background: rgb(211,211,211);
-    background: linear-gradient(0deg, rgba(211,211,211,1) 0%, rgba(255,255,255,1) 100%); 
+/* Body, header and main */
+header {
+    height: auto;
 }
 
+body {
+}
 
-footer {
-    height: 200px;
+main {
+    display: flex;
+    flex-direction: column;
+    background: #d3d3d3;
+}
+
+/*First container */
+
+#top-background {
+    background-image: url("../img/bg-gray2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
 }
 
 .dark-color {
@@ -51,23 +41,163 @@ footer {
     font-size: 1.5rem;
 }
 
+#header-sub,
+#header-title
+    { 
+        background-image: url("../img/rorange.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 
+
 #box {
-    border: 2px solid white;
+    border: 1px solid white;
     margin-top: 30px;
     font-size: 0.7em;
     line-height: 25px;
+    background: #d3d3d3;
+    padding: 1px;
 }
 
 #event-date {
     font-size: 1.5em;
+    color: #272a31;
 }
 #where {
     font-size: 0.9em;
 }
+
+/*Second container*/ 
+
 .gray-background {
-    background-image: url("../img/gray.jpg");
+    background-image: url("../img/gray3.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 740px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    }
+
+.overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39,42,49, 0.8);
+    z-index: -2;
+}
+
+.method {
+    text-align: center;
+    padding-top: 30px;
+    z-index: 50;
+}
+
+.orange {
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.5px;
+    background-color:#ec5242;
+    margin-bottom: 10px;
+}
+
+#containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cont-method {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background: rgba(211,211,211, 0.1);
+    padding-top: 20px;
+    margin-bottom: 10px;;
+}
+
+.icon {
+    color: white;
+    font-size: 1.5rem;
+    opacity: 1;
+    flex: 1 1 auto;
+    align-self: center;
+}
+
+.cont-method h6 {
+    color: #ec5242;
+    opacity: 1;
+    flex: 1 1 auto;
+    align-self: center;
+}
+
+.cont-text {
+    font-size: 10px;
+    opacity: 1;
+    flex: 2 1 auto;
+    align-self: center;
+}
+
+#botoncito {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 0;
+    background-color: #ec5242
+}
+
+#botoncito a {
+    color: white;
+}
+
+.guest-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "b t";
+}
+
+.img-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95px;
+    width: 95px;
+    grid-area: b;
+}
+
+#yoona {
+    background-image: url("../img/yoona.jpg");
+    background-position: top;
+}
+
+.guest {
+    grid-area: t;
+}
+.guest-info {
+    color: #ec5242;
+    font-size: small;
+}
+
+.barrita {
+    width: 25px;
+    height: 0.5px;
+    background-color:#272a31;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.more-info {
+    font-size: xx-small;
+}
+
+footer {
+    height: 0;
 }
