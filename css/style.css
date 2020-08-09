@@ -12,6 +12,7 @@
 /* Body, header and main */
 header {
     height: auto;
+    display: none;
 }
 
 body {
@@ -55,9 +56,9 @@ main {
     border: 1px solid white;
     margin-top: 30px;
     font-size: 0.7em;
-    line-height: 25px;
+    line-height: 20px;
     background: #d3d3d3;
-    padding: 1px;
+    padding: 10px;
 }
 
 #event-date {
@@ -115,12 +116,15 @@ main {
 }
 
 .cont-method {
-    display: flex;
-    flex-direction: row;
     padding: 10px;
     background: rgba(211,211,211, 0.1);
-    padding-top: 20px;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "i h t";
+    justify-content: center;
 }
 
 .icon {
@@ -129,6 +133,7 @@ main {
     opacity: 1;
     flex: 1 1 auto;
     align-self: center;
+    grid-area: i;
 }
 
 .cont-method h6 {
@@ -136,6 +141,7 @@ main {
     opacity: 1;
     flex: 1 1 auto;
     align-self: center;
+    grid-area: h;
 }
 
 .cont-text {
@@ -143,6 +149,7 @@ main {
     opacity: 1;
     flex: 2 1 auto;
     align-self: center;
+    grid-area: t;
 }
 
 #botoncito {
@@ -234,7 +241,7 @@ main {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 10px 2px 20px 2px;
     cursor: pointer;
     font-size: 12px;
 }
@@ -252,7 +259,22 @@ main {
     background-image: url("../img/harold.jpg");
     background-position: right;
 }
-
 footer {
     height: 0;
+}
+/* M E D I A  Q U E R Y */
+@media (min-width: 768px) {
+
+/* Body, header and main */
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #272a31;
+    }
+
+    .navbar-top {
+
+    }
+
+
 }
