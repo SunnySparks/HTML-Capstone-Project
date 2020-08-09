@@ -157,6 +157,11 @@ main {
     color: white;
 }
 
+.guests {
+    display: flex;
+    flex-direction: column;
+}
+
 .guest-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -165,21 +170,41 @@ main {
     grid-template-areas: "b t";
 }
 
+.pictures-cont {
+    grid-area: b;
+}
+
+.checkers {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    background-image: url("../img/checker.jpg");
+    top: ;
+    left: ;
+    float: left;
+    position: relative;
+}
+
 .img-background {
     background-repeat: no-repeat;
     background-size: cover;
     height: 95px;
     width: 95px;
-    grid-area: b;
-}
-
-#yoona {
-    background-image: url("../img/yoona.jpg");
-    background-position: top;
+    float: right;
+    position: relative;
+    bottom: 33px;
+    right: 10px;
 }
 
 .guest {
     grid-area: t;
+    display: flex;
+    flex-direction: column;
+}
+
+.guest h6 {
+    font-size: 0.8rem;
 }
 .guest-info {
     color: #ec5242;
@@ -191,11 +216,41 @@ main {
     height: 0.5px;
     background-color:#272a31;
     margin-bottom: 10px;
-    text-align: right;
+    text-align: left;
+    display: flex;
+    margin-left: 0;
 }
 
 .more-info {
     font-size: xx-small;
+    margin-top: 10px;
+}
+
+#botton-more {
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    color: #272a31;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.fa-chevron-down {
+    color: #ec5242;
+}
+
+#yoona {
+    background-image: url("../img/yoona.jpg");
+    background-position: top;
+}
+
+#harold {
+    background-image: url("../img/harold.jpg");
+    background-position: right;
 }
 
 footer {
