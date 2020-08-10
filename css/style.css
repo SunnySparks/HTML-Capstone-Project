@@ -75,11 +75,10 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 550px;
+    height: 580px;
     position: relative;
     overflow: hidden;
     z-index: -1;
-    padding-top: 30px;
     }
 
 .overlay {
@@ -116,6 +115,7 @@ main {
 }
 
 .cont-method {
+    width: 100%;
     padding: 10px;
     background: rgba(211,211,211, 0.1);
     margin-bottom: 10px;
@@ -164,8 +164,20 @@ main {
     color: white;
 }
 
+.whole-program {
+    display: none;
+}
+
+/* THIS IS THE GUESTS SECTION */
+
 .guest-section {
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.meet-our-guests {
+    display: block;
 }
 
 .guests {
@@ -176,13 +188,15 @@ main {
 .guest-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 0.6fr;
     gap: 1px 1px;
     grid-template-areas: "b t";
 }
 
 .pictures-cont {
     grid-area: b;
+    min-height: 150px;
+    max-width: 165px;
 }
 
 .checkers {
@@ -191,10 +205,10 @@ main {
     height: 45px;
     width: 45px;
     background-image: url("../img/checker.jpg");
-    top: ;
-    left: ;
-    float: left;
+    float: right;
     position: relative;
+    right: 60px;
+    bottom: 15px;
 }
 
 .img-background {
@@ -204,8 +218,7 @@ main {
     width: 95px;
     float: right;
     position: relative;
-    bottom: 33px;
-    right: 10px;
+    bottom: 50px;
 }
 
 .guest {
@@ -254,18 +267,28 @@ main {
     color: #ec5242;
 }
 
-#yoona {
+.yoona {
     background-image: url("../img/yoona.jpg");
     background-position: top;
 }
 
-#harold {
+.harold {
     background-image: url("../img/harold.jpg");
     background-position: right;
 }
-footer {
-    height: 0;
+
+.guests-2 {
+    display: none;
 }
+
+.partner {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
 /* M E D I A  Q U E R Y */
 @media (min-width: 768px) {
 
@@ -279,7 +302,7 @@ footer {
         flex-direction: row-reverse;
         background-color: #272a31;
         width: 100%;
-        padding-right: 300px;
+        padding-right: 200px;
         margin-right: auto;
     }
 
@@ -287,13 +310,245 @@ footer {
         background-color: white;
         color: #272a31;
         width: 100%;
-        padding-right: 300px;
-        padding-left: 300px;
+        padding-right: 200px;
+        padding-left: 200px;
         margin-right: auto;
         margin-left: auto;
     }
 
     .council {
-        height: 60px
+        height: 40px;
+        margin-right: 100px;
     }
+
+    #botton-tickets {
+        background-color: white;
+        border: 5px solid #ec5242;
+        color: #ec5242;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    
+    .sub-nav {
+        color: #272a31;
+    }
+
+    .sub-nav:hover {
+        color: #ec5242;
+    }
+
+    .main-cont {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    /* Middle container and guests container*/
+
+    .gray-header {
+        display: block;
+    }
+
+    #containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        align-items: stretch;
+    }
+
+    .cont-method {
+        padding: 10px;
+        background: rgba(211,211,211, 0.1);
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+        text-align: center;
+    }
+
+    #botoncito {
+        display: none;
+    }
+
+    .whole-program {
+        display: inline;
+        text-align: center;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .gray-background {
+        height: 350px;
+    }
+
+    .meet-our-guests {
+        display: none;
+    }
+
+    .meet-our-guests-2 {
+        margin-bottom: 80px;
+    }
+
+    .guests {
+        display: none;
+    }
+    
+    #botton-more {
+        display: none;
+    }
+
+    .guests-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: 
+        "ga gd" 
+        "gb ge" 
+        "gc gf";
+    }
+
+    .pictures-cont {
+        grid-area: b;
+        min-height: 150px;
+        max-width: 130px;
+        margin: 10px;
+    }
+
+    .guest h6 {
+        font-size: 1.2rem;
+    }
+    .guest-info {
+        color: #ec5242;
+        font-size: small;
+    }
+    
+    .barrita {
+        width: 25px;
+        height: 0.5px;
+        background-color:#d3d3d3;
+        margin-bottom: 10px;
+        text-align: left;
+        display: flex;
+        margin:0;
+    }
+    
+    .more-info {
+        font-size: x-small;
+        margin-top: 10px;
+    }
+
+    .ga {
+        grid-area: ga;
+    }
+
+    .gb {
+        grid-area: gb;
+    }
+
+    .gc {
+        grid-area: gc;
+    }
+
+    .gd {
+        grid-area: gd;
+    }
+
+    .ge {
+        grid-area: ge;
+    }
+
+    .gf {
+        grid-area: gf;
+    }
+
+    .camila {
+        background-image: url("../img/camila.jpg");
+        background-position: right;
+    }
+
+    .hugo {
+        background-image: url("../img/hugo.jpg");
+        background-position: top;
+    }
+
+    .omar {
+        background-image: url("../img/omar.jpeg");
+        background-position: top;
+    }
+
+    .pryanka {
+        background-image: url("../img/pryanka.jpg");
+        background-position: top;
+    }
+
+    .partner {
+        display: block;
+        background-color: #272a31;
+        color: #d3d3d3;
+    }
+
+    .partners-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 3px 1px;
+        grid-template-areas: "pa pb pc pd pe";
+    }
+
+    .partner-pic {
+        display: grid;
+    }
+
+    .partner-pic img {
+        filter: grayscale();
+    }
+
+    #alliance {
+        /*background-image: url("../img/af.png");*/
+        grid-area: pa;
+        height: 100px;
+    }
+
+    #b-counsil {
+        /*background-image: url("../img/british.png");*/
+        grid-area: pb;
+        height: 60px;
+    }
+
+    #cervantes {
+        /*background-image: url("../img/cervantes.png");*/
+        grid-area: pc;
+        height: 90px;
+    }
+
+    #duo {
+        /*background-image: url("../img/duo.png");*/
+        grid-area: pd;
+        height: 60px;
+    }
+
+    #italki {
+        /*background-image: url("../img/italki.png");*/
+        grid-area: pe;
+        height: 80px;
+    }
+
+
+
+    footer {
+        display: flex;
+        background: #d3d3d3;
+        height: 200px;
+    }
+
+    .footer-logo {
+        filter: grayscale();
+        opacity: 0.5;
+    }
+
 }
