@@ -267,14 +267,29 @@ footer {
 
 /* Body, header and main */
     header {
-        display: flex;
-        flex-direction: column;
-        background-color: #272a31;
+        display: block;
     }
 
     .navbar-top {
-
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #272a31;
+        width: 100%;
+        padding-right: 300px;
+        margin-right: auto;
     }
 
+    .navbar-bottom {
+        background-color: white;
+        color: #272a31;
+        width: 100%;
+        padding-right: 300px;
+        padding-left: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
+    .council {
+        height: 60px
+    }
 }
