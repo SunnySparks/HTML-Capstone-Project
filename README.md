@@ -3,7 +3,7 @@ Capstone project for HTML curriculum
 
 Clone of Cindy Shin in Behance's design template for Web Page - A Microverse Solo Project made By José Francisco Silva Díaz
 
-![Homepage](Screenshot.png)
+![Homepage](App_Screenshot.png)
 
 This website supports two resolutions: 
 - mobile: up to 768px
