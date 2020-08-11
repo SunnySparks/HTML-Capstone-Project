@@ -262,6 +262,10 @@ footer {
     width: 100%;
   }
 
+  .partner{
+    display: none;
+  }
+
   footer {
     display: flex;
     background: #272a31;
