@@ -182,7 +182,7 @@ main {
 
 footer {
   display: flex;
-  background: #272a31;
+  background: white;
   height: 200px;
   font-size: small;
 }
@@ -260,5 +260,12 @@ footer {
   .evento-colombia,
   .evento-rio {
     width: 100%;
+  }
+
+  footer {
+    display: flex;
+    background: #272a31;
+    height: 200px;
+    font-size: small;
   }
 }
