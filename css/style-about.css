@@ -44,9 +44,7 @@ main {
 #header-title {
   background-image: url("../img/rorange.jpg");
   background-size: cover;
-
-  /* background-clip: text;
-  -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   color: transparent;
 }
 
