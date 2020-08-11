@@ -25,7 +25,7 @@ main {
 /*First container */
 
 #top-background {
-    background-image: url("../img/bg-gray.png");
+    background-image: url("../img/bg-gray2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,12 +51,12 @@ main {
     } 
 
 #box {
-    border: 1px solid #d3d3d3;
-    margin-top: 30px;
-    font-size: 0.7em;
-    line-height: 20px;
-    background: white;
-    padding: 10px;
+        border: 1px solid white;
+        margin-top: 30px;
+        font-size: 0.7em;
+        line-height: 20px;
+        background: #d3d3d3;
+        padding: 10px;
 }
 
 #event-date {
@@ -186,6 +186,7 @@ footer {
     display: flex;
     background: #d3d3d3;
     height: 200px;
+    font-size: small;
 }
 
 .footer-logo {
