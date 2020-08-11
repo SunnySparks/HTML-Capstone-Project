@@ -22,17 +22,17 @@ And there are 3 HTML files to explore:
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/index.html)
-[About webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/about.html)
-[Tickets webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/feature-branch/tickets.html)
+- [Live Demo Link](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/index.html)
+- [About webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/about.html)
+- [Tickets webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/feature-branch/tickets.html)
 
 
 ## Getting Started
 
 **Original Design**
-- Go to [Cindy Shin design idea on Behance.net](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) and take a look at her design idea. The main purpose of this website is to replicate the looks of her design, while changing the containers to make it look personalized
+- Go to [Cindy Shin design idea on Behance.net](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) and take a look at it. The main purpose of this website is to replicate the looks of her design, while changing the containers to make it look personalized
 
-TIn order to get a local copy you just need the following elements 
+In order to get a local copy you just need the following elements 
 
 ### Prerequisites
 
