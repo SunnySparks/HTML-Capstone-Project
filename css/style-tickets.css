@@ -1,0 +1,229 @@
+@font-face { font-family: Cocogoose; src: url('../cocogoose_trial-webfont.woff'); } 
+@font-face { font-family: Cocogoose; font-weight: bold; src: url('../cocogoose_trial-webfont.woff2');}
+
+.coco {
+    font-family: Cocogoose, sans-serif;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Body, header and main */
+header {
+    height: auto;
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background: #d3d3d3;
+}
+
+/*First container */
+
+#top-background {
+    background-image: url("../img/bg-gray2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+.dark-color {
+    color: #272a31;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+#header-sub,
+#header-title
+    { 
+        background-image: url("../img/rorange.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+} 
+
+#box {
+    border: 1px solid white;
+    margin-top: 30px;
+    font-size: 0.7em;
+    line-height: 20px;
+    background: #d3d3d3;
+    padding: 10px;
+}
+    
+#event-date {
+        color: #272a31;
+}
+    
+.where {
+        font-size: 0.9em;
+}
+    
+.where a {
+        color: #272a31;
+        font-weight: bold;
+}
+
+.middle-section {
+    background-color: white;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.about-the-logo {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.method {
+    text-align: center;
+    padding-top: 30px;
+    z-index: 50;
+}
+
+.orange {
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.5px;
+    background-color:#ec5242;
+    margin-bottom: 10px;
+}
+
+.step {
+    border: 1px solid #d3d3d3;
+    border-radius: 25px;
+}
+
+.logo {
+    text-align: start;
+    color: #ec5242;
+}
+
+.ticket-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: 
+    "ta tb tc"
+    "pa pb pc";
+    border: 10px solid;
+    border-image-source: url("../img/diagonal.jpg");
+    border-image-slice: 40 42;
+    border-image-repeat: repeat;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.ticket-table p,
+.ticket-table label {
+    margin-top: 10px;
+}
+
+.ticket-table input {
+    margin-top: 15px;
+}
+
+.pass-2,
+.price-2 {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+.price-1,
+.price-2,
+.price-3 {
+    border-top: 1px solid #d3d3d3;
+}
+
+.middle-bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background: #272a31;
+    height: 200px;
+    font-size: small;
+}
+
+.footer-logo {
+    width: 140px;
+}
+
+@media (min-width: 768px) {
+
+    /* Body, header and main */
+    header {
+        display: block;
+    }
+
+    .navbar-top {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #272a31;
+        width: 100%;
+        padding-right: 200px;
+        margin-right: auto;
+    }
+
+    .navbar-bottom {
+        background-color: white;
+        color: #272a31;
+        width: 100%;
+        padding-right: 200px;
+        padding-left: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .council {
+        height: 40px;
+        margin-right: 100px;
+    }
+
+    .main-cont {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    #botton-tickets {
+        background-color: white;
+        border: 5px solid #ec5242;
+        color: #ec5242;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    
+    .sub-nav {
+        color: #272a31;
+    }
+
+    .sub-nav:hover {
+        color: #ec5242;
+    }
+
+    .step {
+        text-align: center;
+    }
+
+}

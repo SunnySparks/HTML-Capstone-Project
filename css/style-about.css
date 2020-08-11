@@ -1,0 +1,268 @@
+@font-face { font-family: Cocogoose; src: url('../cocogoose_trial-webfont.woff'); } 
+@font-face { font-family: Cocogoose; font-weight: bold; src: url('../cocogoose_trial-webfont.woff2');}
+
+.coco {
+    font-family: Cocogoose, sans-serif;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Body, header and main */
+header {
+    height: auto;
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background: #d3d3d3;
+}
+
+/*First container */
+
+#top-background {
+    background-image: url("../img/bg-gray2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+.dark-color {
+    color: #272a31;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+#header-sub,
+#header-title
+    { 
+        background-image: url("../img/rorange.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    } 
+
+#box {
+        border: 1px solid white;
+        margin-top: 30px;
+        font-size: 0.7em;
+        line-height: 20px;
+        background: #d3d3d3;
+        padding: 10px;
+}
+
+#event-date {
+    color: #272a31;
+}
+.where {
+    font-size: 0.9em;
+}
+
+.where a {
+    color: #272a31;
+    font-weight: bold;
+}
+
+/* Middle containers */
+.middle-section {
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.about-the-logo {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+}
+
+.method {
+    text-align: center;
+    padding-top: 30px;
+    z-index: 50;
+}
+
+.orange {
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.5px;
+    background-color:#ec5242;
+    margin-bottom: 10px;
+}
+
+.logo-info {
+    text-align: center;
+}
+
+.middle-bottom-section {
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.evento-colombia {
+    background-image: url("../img/yoona-crowd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(236,82,66, 0.7);
+}
+
+.overlay h3 {
+    margin-top: 70px;
+}
+
+.evento-rio {
+    background-image: url("../img/harold-2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+/* Footer */ 
+
+.partner {
+    display: block;
+    background-color: #272a31;
+    color: #d3d3d3;
+}
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.partner-pic img {
+    filter: grayscale();
+}
+
+.partner-pic {
+    filter: grayscale();
+}
+
+#alliance {
+    height: 50px;
+}
+
+#b-counsil {
+    height: 50px;
+}
+
+#cervantes {
+    height: 50px;
+}
+
+#duo {
+    height: 50px;
+}
+
+#italki {
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    background: #d3d3d3;
+    height: 200px;
+    font-size: small;
+}
+
+.footer-logo {
+    opacity: 0.5;
+    width: 140px;
+}
+
+@media (min-width: 768px) {
+
+    /* Body, header and main */
+    header {
+        display: block;
+    }
+
+    .navbar-top {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #272a31;
+        width: 100%;
+        padding-right: 200px;
+        margin-right: auto;
+    }
+
+    .navbar-bottom {
+        background-color: white;
+        color: #272a31;
+        width: 100%;
+        padding-right: 200px;
+        padding-left: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .council {
+        height: 40px;
+        margin-right: 100px;
+    }
+
+    #botton-tickets {
+        background-color: white;
+        border: 5px solid #ec5242;
+        color: #ec5242;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    
+    .sub-nav {
+        color: #272a31;
+    }
+
+    .sub-nav:hover {
+        color: #ec5242;
+    }
+
+    .main-cont {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .logo-info-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .event-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .evento-colombia,
+    .evento-rio {
+        width: 100%;
+    }
+
+}
