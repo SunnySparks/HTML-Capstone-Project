@@ -509,31 +509,26 @@ footer {
     }
 
     #alliance {
-        /*background-image: url("../img/af.png");*/
         grid-area: pa;
         height: 100px;
     }
 
     #b-counsil {
-        /*background-image: url("../img/british.png");*/
         grid-area: pb;
         height: 60px;
     }
 
     #cervantes {
-        /*background-image: url("../img/cervantes.png");*/
         grid-area: pc;
         height: 90px;
     }
 
     #duo {
-        /*background-image: url("../img/duo.png");*/
         grid-area: pd;
         height: 60px;
     }
 
     #italki {
-        /*background-image: url("../img/italki.png");*/
         grid-area: pe;
         height: 80px;
     }
