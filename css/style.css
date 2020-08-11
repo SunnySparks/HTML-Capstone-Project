@@ -1,6 +1,6 @@
-@font-face { font-family: Cocogoose; src: url('../cocogoose_trial-webfont.woff'); }
+@font-face { font-family: Cocogoose; src: url('../font/cocogoose_trial-webfont.woff'); }
 
-@font-face { font-family: Cocogoose; font-weight: bold; src: url('../cocogoose_trial-webfont.woff2'); }
+@font-face { font-family: Cocogoose; font-weight: bold; src: url('../font/cocogoose_trial-webfont.woff2'); }
 
 .coco {
   font-family: Cocogoose, sans-serif;
