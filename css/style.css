@@ -15,9 +15,6 @@ header {
     display: none;
 }
 
-body {
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -542,7 +539,6 @@ footer {
     }
 
     .footer-logo {
-        filter: grayscale();
         opacity: 0.5;
     }
 
