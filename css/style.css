@@ -11,6 +11,10 @@
 }
 
 /* Body, header and main */
+body {
+  height: 100%;
+}
+
 header {
   height: auto;
   display: none;
@@ -24,7 +28,7 @@ main {
 
 /* First container */
 
-#top-background {
+.top-background {
   background-image: url("../img/bg-gray2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,28 +44,28 @@ main {
   font-size: 1.5rem;
 }
 
-#header-sub,
-#header-title {
+.header-sub,
+.header-title {
   background-image: url("../img/rorange.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-#box {
+.box {
   border: 1px solid white;
   margin-top: 30px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 20px;
   background: #d3d3d3;
   padding: 10px;
 }
 
-#event-date {
+.event-date {
   color: #272a31;
 }
 
-#where {
+.where {
   font-size: 0.9em;
 }
 
@@ -69,11 +73,8 @@ main {
 
 .gray-background {
   background-image: url("../img/gray3.png");
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 580px;
-  position: relative;
+  height: 100%;
   overflow: hidden;
   z-index: -1;
 }
@@ -95,15 +96,19 @@ main {
 }
 
 .orange {
-  width: 25px;
   margin-left: auto;
   margin-right: auto;
-  height: 0.5px;
   background-color: #ec5242;
-  margin-bottom: 10px;
 }
 
-#containers {
+.orange,
+.barrita {
+  height: 0.5px;
+  margin-bottom: 10px;
+  width: 25px;
+}
+
+.containers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,42 +132,47 @@ main {
 .icon {
   color: white;
   font-size: 1.5rem;
-  opacity: 1;
-  flex: 1 1 auto;
-  align-self: center;
   grid-area: i;
 }
 
-.cont-method h6 {
+.cont-method h5 {
   color: #ec5242;
-  opacity: 1;
-  flex: 1 1 auto;
-  align-self: center;
   grid-area: h;
 }
 
+.icon,
+.cont-method h6 {
+  align-self: center;
+  flex: 1 1 auto;
+  opacity: 1;
+}
+
 .cont-text {
-  font-size: 10px;
+  font-size: 0.8em;
   opacity: 1;
   flex: 2 1 auto;
   align-self: center;
   grid-area: t;
 }
 
-#botoncito {
+.botoncito {
   display: flex;
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   border-radius: 0;
   background-color: #ec5242;
 }
 
-#botoncito a {
+.botoncito a {
   color: white;
 }
 
 .whole-program {
   display: none;
+}
+
+.whole-program p {
+  font-size: 1em;
 }
 
 /* THIS IS THE GUESTS SECTION */
@@ -197,25 +207,30 @@ main {
 }
 
 .checkers {
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 45px;
   width: 45px;
   background-image: url("../img/checker.jpg");
-  float: right;
-  position: relative;
   right: 60px;
   bottom: 15px;
 }
 
 .img-background {
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 95px;
   width: 95px;
-  float: right;
-  position: relative;
   bottom: 50px;
+}
+
+.gray-background,
+.checkers,
+.img-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.checkers,
+.img-background {
+  float: right;
 }
 
 .guest {
@@ -234,10 +249,7 @@ main {
 }
 
 .barrita {
-  width: 25px;
-  height: 0.5px;
   background-color: #272a31;
-  margin-bottom: 10px;
   text-align: left;
   display: flex;
   margin-left: 0;
@@ -248,17 +260,21 @@ main {
   margin-top: 10px;
 }
 
-#botton-more {
-  background-color: white;
+.botton-more {
   border: 1px solid #d3d3d3;
   color: #272a31;
+  margin: 10px 2px 20px 2px;
+}
+
+.botton-more,
+.botton-tickets {
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 10px 2px 20px 2px;
-  cursor: pointer;
-  font-size: 12px;
 }
 
 .fa-chevron-down {
@@ -298,36 +314,31 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     background-color: #272a31;
-    width: 100%;
-    padding-right: 200px;
-    margin-right: auto;
   }
 
   .navbar-bottom {
     background-color: white;
     color: #272a31;
-    width: 100%;
-    padding-right: 200px;
     padding-left: 200px;
-    margin-right: auto;
     margin-left: auto;
   }
+
+  .navbar-top,
+  .navbar-bottom {
+    margin-right: auto;
+    padding-right: 200px;
+    width: 100%;
+  }
+
 
   .council {
     height: 40px;
     margin-right: 100px;
   }
 
-  #botton-tickets {
-    background-color: white;
+  .botton-tickets {
     border: 5px solid #ec5242;
     color: #ec5242;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 12px;
   }
 
   .sub-nav {
@@ -349,8 +360,7 @@ footer {
     display: block;
   }
 
-  #containers {
-    display: flex;
+  .containers {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
@@ -360,13 +370,17 @@ footer {
   .cont-method {
     padding: 10px;
     background: rgba(211, 211, 211, 0.1);
-    display: flex;
     flex-direction: column;
     margin: 2px;
     text-align: center;
   }
 
-  #botoncito {
+  .cont-method,
+  .containers {
+      display: flex
+  }
+
+  .botoncito {
     display: none;
   }
 
@@ -393,7 +407,7 @@ footer {
     display: none;
   }
 
-  #botton-more {
+  .botton-more {
     display: none;
   }
 
@@ -425,12 +439,7 @@ footer {
   }
 
   .barrita {
-    width: 25px;
-    height: 0.5px;
     background-color: #d3d3d3;
-    text-align: left;
-    display: flex;
-    margin: 0 0 10px 0;
   }
 
   .more-info {
@@ -504,29 +513,29 @@ footer {
     filter: grayscale();
   }
 
-  #alliance {
+  .alliance {
     grid-area: pa;
     height: 100px;
   }
 
-  #b-counsil {
+  .b-counsil {
     grid-area: pb;
     height: 60px;
   }
 
-  #cervantes {
+  .cervantes {
     grid-area: pc;
-    height: 90px;
-  }
-
-  #duo {
-    grid-area: pd;
-    height: 60px;
-  }
-
-  #italki {
-    grid-area: pe;
     height: 80px;
+  }
+
+  .duo {
+    grid-area: pd;
+    height: 50px;
+  }
+
+  .italki {
+    grid-area: pe;
+    height: 55px;
   }
 
   footer {

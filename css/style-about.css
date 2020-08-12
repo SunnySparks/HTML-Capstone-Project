@@ -24,7 +24,7 @@ main {
 
 /* First container */
 
-#top-background {
+.top-background {
   background-image: url("../img/bg-gray2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,15 +40,15 @@ main {
   font-size: 1.5rem;
 }
 
-#header-sub,
-#header-title {
+.header-sub,
+.header-title {
   background-image: url("../img/rorange.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-#box {
+.box {
   border: 1px solid white;
   margin-top: 30px;
   font-size: 0.7em;
@@ -57,7 +57,7 @@ main {
   padding: 10px;
 }
 
-#event-date {
+.event-date {
   color: #272a31;
 }
 
@@ -104,14 +104,17 @@ main {
   border-bottom: 2px solid #d3d3d3;
 }
 
-.evento-colombia {
+.evento-oaxaca {
   background-image: url("../img/yoona-crowd.png");
+}
+
+.evento-oaxaca,
+.evento-rio {
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
   height: 250px;
+  overflow: hidden;
+  position: relative;
 }
 
 .overlay {
@@ -129,12 +132,6 @@ main {
 
 .evento-rio {
   background-image: url("../img/harold-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  height: 250px;
 }
 
 /* Footer */
@@ -160,23 +157,11 @@ main {
   filter: grayscale();
 }
 
-#alliance {
-  height: 50px;
-}
-
-#b-counsil {
-  height: 50px;
-}
-
-#cervantes {
-  height: 50px;
-}
-
-#duo {
-  height: 50px;
-}
-
-#italki {
+.alliance,
+.b-counsil,
+.cervantes,
+.duo,
+.italki {
   height: 50px;
 }
 
@@ -202,19 +187,20 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     background-color: #272a31;
-    width: 100%;
-    padding-right: 200px;
-    margin-right: auto;
   }
 
   .navbar-bottom {
     background-color: white;
     color: #272a31;
-    width: 100%;
-    padding-right: 200px;
     padding-left: 200px;
-    margin-right: auto;
     margin-left: auto;
+  }
+
+  .navbar-top,
+  .navbar-bottom {
+    margin-right: auto;
+    padding-right: 200px;
+    width: 100%;
   }
 
   .council {
@@ -222,7 +208,7 @@ footer {
     margin-right: 100px;
   }
 
-  #botton-tickets {
+  .botton-tickets {
     background-color: white;
     border: 5px solid #ec5242;
     color: #ec5242;
@@ -233,6 +219,7 @@ footer {
     cursor: pointer;
     font-size: 12px;
   }
+
 
   .sub-nav {
     color: #272a31;
@@ -257,9 +244,11 @@ footer {
     flex-direction: row;
   }
 
-  .evento-colombia,
+
+  .evento-oaxaca,
   .evento-rio {
     width: 100%;
+    background-position: center;
   }
 
   .partner {
@@ -271,5 +260,6 @@ footer {
     background: #272a31;
     height: 200px;
     font-size: small;
+    color: white;
   }
 }

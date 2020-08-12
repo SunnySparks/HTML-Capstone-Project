@@ -24,7 +24,7 @@ main {
 
 /* First container */
 
-#top-background {
+.top-background {
   background-image: url("../img/bg-gray2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,15 +40,15 @@ main {
   font-size: 1.5rem;
 }
 
-#header-sub,
-#header-title {
+.header-sub,
+.header-title {
   background-image: url("../img/rorange.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-#box {
+.box {
   border: 1px solid white;
   margin-top: 30px;
   font-size: 0.7em;
@@ -57,7 +57,7 @@ main {
   padding: 10px;
 }
 
-#event-date {
+.event-date {
   color: #272a31;
 }
 
@@ -175,19 +175,20 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     background-color: #272a31;
-    width: 100%;
-    padding-right: 200px;
-    margin-right: auto;
   }
 
   .navbar-bottom {
     background-color: white;
     color: #272a31;
-    width: 100%;
-    padding-right: 200px;
     padding-left: 200px;
-    margin-right: auto;
     margin-left: auto;
+  }
+  
+  .navbar-top,
+  .navbar-bottom {
+    margin-right: auto;
+    padding-right: 200px;
+    width: 100%;
   }
 
   .council {
@@ -200,7 +201,7 @@ footer {
     margin-bottom: 80px;
   }
 
-  #botton-tickets {
+  .botton-tickets {
     background-color: white;
     border: 5px solid #ec5242;
     color: #ec5242;
