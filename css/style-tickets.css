@@ -119,8 +119,6 @@ main {
   border-image-source: url("../img/diagonal.jpg");
   border-image-slice: 40 42;
   border-image-repeat: repeat;
-  text-align: center;
-  background-color: white;
   margin-bottom: 40px;
 }
 
@@ -152,6 +150,64 @@ main {
   align-items: center;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.form-container {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.form-bottom {
+  display: grid;
+  grid-template-columns: 0.1fr 0.6fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: 
+  "ra ia"
+  "rb ib" 
+  "rc ic" 
+  "rd id";
+  max-height: 40px;
+}
+
+.input-a,
+.input-b,
+.input-c,
+.input-d {
+  min-width: 130px;
+  max-width: 200px; 
+}
+
+.radio-a {
+  grid-area: ra;
+}
+
+.input-a {
+  grid-area: ia;
+}
+
+.radio-b {
+  grid-area: rb;
+}
+
+.input-b {
+  grid-area: ib;
+}
+
+.radio-c {
+  grid-area: rc;
+}
+
+.input-c {
+  grid-area: ic;
+}
+
+.radio-d {
+  grid-area: rd;
+}
+
+.input-d {
+  grid-area: id;
 }
 
 footer {
@@ -202,15 +258,19 @@ footer {
   }
 
   .botton-tickets {
-    background-color: white;
     border: 5px solid #ec5242;
     color: #ec5242;
     padding: 10px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     font-size: 12px;
+  }
+
+  .botton-tickets
+  .ticket-table {
+    background-color: white;
+    text-align: center;
   }
 
   .sub-nav {
@@ -224,4 +284,5 @@ footer {
   .step {
     text-align: center;
   }
+
 }
