@@ -162,11 +162,11 @@ main {
   grid-template-columns: 0.1fr 0.6fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: 
-  "ra ia"
-  "rb ib" 
-  "rc ic" 
-  "rd id";
+  grid-template-areas:
+    "ra ia"
+    "rb ib"
+    "rc ic"
+    "rd id";
   max-height: 40px;
 }
 
@@ -175,7 +175,7 @@ main {
 .input-c,
 .input-d {
   min-width: 130px;
-  max-width: 200px; 
+  max-width: 200px;
 }
 
 .radio-a {
@@ -267,8 +267,7 @@ footer {
     font-size: 12px;
   }
 
-  .botton-tickets
-  .ticket-table {
+  .botton-tickets .ticket-table {
     background-color: white;
     text-align: center;
   }
@@ -284,5 +283,4 @@ footer {
   .step {
     text-align: center;
   }
-
 }
