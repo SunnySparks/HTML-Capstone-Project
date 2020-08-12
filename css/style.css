@@ -330,7 +330,6 @@ footer {
     width: 100%;
   }
 
-
   .council {
     height: 40px;
     margin-right: 100px;
@@ -377,7 +376,7 @@ footer {
 
   .cont-method,
   .containers {
-      display: flex
+    display: flex;
   }
 
   .botoncito {
