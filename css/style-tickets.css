@@ -117,10 +117,10 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: 
-  "ta pa" 
-  "tb pb" 
-  "tc pc";
+  grid-template-areas:
+    "ta pa"
+    "tb pb"
+    "tc pc";
   border: 10px solid;
   border-image-source: url("../img/diagonal.jpg");
   border-image-slice: 40 42;
@@ -325,26 +325,25 @@ footer {
       "pa pb pc";
   }
 
-.ticket-table p,
-.ticket-table label {
-  margin-top: 10px;
-  margin-left: 25px;
-}
+  .ticket-table p,
+  .ticket-table label {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
 
-.ticket-table input {
-  margin-top: 15px;
-  margin-left: 10px;
-}
+  .ticket-table input {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
 
-.pass-2,
-.pass-3 {
-  border-bottom: 0;
-  border-left: 1px solid #d3d3d3;
-}
+  .pass-2,
+  .pass-3 {
+    border-bottom: 0;
+    border-left: 1px solid #d3d3d3;
+  }
 
-.price-1,
-.price-3 {
-  border-top: 1px solid #d3d3d3;
-}
-
+  .price-1,
+  .price-3 {
+    border-top: 1px solid #d3d3d3;
+  }
 }
