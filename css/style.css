@@ -202,7 +202,7 @@ main {
 
 .pictures-cont {
   grid-area: b;
-  min-height: 150px;
+  min-height: 120px;
   max-width: 165px;
 }
 
@@ -277,7 +277,8 @@ main {
   text-decoration: none;
 }
 
-.fa-chevron-down {
+.fa-chevron-down,
+.fa-chevron-up {
   color: #ec5242;
 }
 
@@ -291,16 +292,71 @@ main {
   background-position: right;
 }
 
+.camila {
+  background-image: url("../img/camila.jpg");
+  background-position: top;
+}
+
+.hugo {
+  background-image: url("../img/hugo.jpg");
+  background-position: top;
+}
+
+.omar {
+  background-image: url("../img/omar.jpeg");
+  background-position: top;
+}
+
+.pryanka {
+  background-image: url("../img/pryanka.jpg");
+  background-position: top;
+}
+
 .guests-2 {
   display: none;
 }
 
+/* Footer */
+
 .partner {
-  display: none;
+  display: block;
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.partner-pic img {
+  filter: grayscale();
+}
+
+.partner-pic {
+  filter: grayscale();
+}
+
+.alliance,
+.b-counsil,
+.cervantes,
+.duo,
+.italki {
+  height: 50px;
 }
 
 footer {
-  display: none;
+  display: flex;
+  background: white;
+  height: 200px;
+  font-size: small;
+}
+
+.footer-logo {
+  opacity: 0.5;
+  width: 140px;
 }
 
 /* M E D I A  Q U E R Y */
@@ -468,26 +524,6 @@ footer {
 
   .gf {
     grid-area: gf;
-  }
-
-  .camila {
-    background-image: url("../img/camila.jpg");
-    background-position: top;
-  }
-
-  .hugo {
-    background-image: url("../img/hugo.jpg");
-    background-position: top;
-  }
-
-  .omar {
-    background-image: url("../img/omar.jpeg");
-    background-position: top;
-  }
-
-  .pryanka {
-    background-image: url("../img/pryanka.jpg");
-    background-position: top;
   }
 
   .partner {

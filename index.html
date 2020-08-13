@@ -9,6 +9,8 @@
     <link href="css/stylesheet.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/cbdf2b0f0e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Capstone Project - Home</title>
 </head>
 <body>
@@ -59,7 +61,7 @@
         </div>
     </header>
     <main class="container-fluid top-background">
-        <nav class="d-inline d-lg-none d-md-none navbar navbar-light light-blue lighten-4">
+        <nav class="border-0 d-inline d-lg-none d-md-none navbar navbar-light light-blue lighten-4">
             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="dark-color">
                     <i class="fas fa-bars fa-1x"></i>
@@ -175,7 +177,71 @@
             </div>
         </article>
         </div>
-        <a href="#" class="button lato col-sm-12 justify-content-center botton-more">MORE  <i class="fas fa-chevron-down"></i></a>
+        <div class="container">
+              <button type="button" class="button lato col-sm-12 justify-content-center botton-more btn" data-toggle="collapse" data-target="#demo">
+                <span class="glyphicon glyphicon-collapse-down"></span> More <i class="fas fa-chevron-down"></i>
+              </button>
+            <div id="demo" class="collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <article class="guest-container">
+                            <div class="pictures-cont p-3">
+                                <div class="checkers"></div>
+                                <div class="img-background camila"></div>
+                            </div>
+                            <div class="guest">
+                                <h6 class="lato m-0">Camila Sodi (Spanish)</h6>
+                                <p class="lato guest-info"><i>Hispanic Letters at UNAM</i></p>
+                                <hr class="barrita m-0">
+                                <p class="lato more-info">Camila is a passionate linguist of spanish, she will teach you everything about her language</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="nav-item">
+                        <article class="guest-container gd">
+                            <div class="pictures-cont p-3">
+                                <div class="checkers"></div>
+                                <div class="img-background hugo"></div>
+                            </div>
+                            <div class="guest">
+                                <h6 class="lato m-0">Hugo Cotton (French)</h6>
+                                <p class="lato guest-info"><i>French teacher at French Institute in Warsaw</i></p>
+                                <hr class="barrita m-0">
+                                <p class="lato more-info">Hugo's passion is to teach french, don't hesitate in having a conversation with him</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="nav-item">
+                        <article class="guest-container">
+                            <div class="pictures-cont p-3">
+                                <div class="checkers"></div>
+                                <div class="img-background omar"></div>
+                            </div>
+                            <div class="guest">
+                                <h6 class="lato m-0">Omar Borkan (Arabic)</h6>
+                                <p class="lato guest-info"><i>Professor at Al Ramsa Institute</i></p>
+                                <hr class="barrita m-0">
+                                <p class="lato more-info">After travelling around the world, Omar noticed how necessary was to have more teaching places in occident</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="nav-item">
+                        <article class="guest-container">
+                            <div class="pictures-cont p-3">
+                                <div class="checkers"></div>
+                                <div class="img-background pryanka"></div>
+                            </div>
+                            <div class="guest">
+                                <h6 class="lato m-0">Pryanka Chopra (Hindi)</h6>
+                                <p class="lato guest-info"><i>Hindi language at University of Delhi</i></p>
+                                <hr class="barrita m-0">
+                                <p class="lato more-info">Pryanka's expertise in Hindi language is one of her best tools at her Hindi conversation club</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+          </div>
         <header class="meet-our-guests-2">
             <h4 class="lato text-black method">Meet our guests</h4>
             <hr class="orange">
@@ -255,7 +321,7 @@
             </article>
             </div>
     </section>
-    <section class="container-fluid col-sm-none partner">
+    <section class="container-fluid partner">
             <h4 class="lato method">Partner</h4>
             <hr class="orange">
             <div class="partners-container">
@@ -290,6 +356,16 @@
             </p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+          $("#demo").on("hide.bs.collapse", function(){
+            $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> More <i class="fas fa-chevron-down"></i>');
+          });
+          $("#demo").on("show.bs.collapse", function(){
+            $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Less <i class="fas fa-chevron-up"></i>');
+          });
+        });
+        </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -75,17 +75,18 @@ main {
   border-bottom: 2px solid #d3d3d3;
 }
 
-.about-the-logo {
+.about-the-logo,
+.logo-info {
   margin-top: 10px;
   display: block;
   text-align: center;
   padding-bottom: 40px;
 }
 
-.method {
+.method,
+.days {
   text-align: center;
   padding-top: 30px;
-  z-index: 50;
 }
 
 .orange {
@@ -125,10 +126,12 @@ main {
 .ticket-table p,
 .ticket-table label {
   margin-top: 10px;
+  margin-left: 25px;
 }
 
 .ticket-table input {
   margin-top: 15px;
+  margin-left: 10px;
 }
 
 .pass-2,
