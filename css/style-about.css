@@ -24,6 +24,10 @@ main {
 
 /* First container */
 
+.toggler-top {
+  margin-left: auto;
+}
+
 .top-background {
   background-image: url("../img/bg-gray2.png");
   background-repeat: no-repeat;
@@ -173,7 +177,6 @@ footer {
 }
 
 .footer-logo {
-  opacity: 0.5;
   width: 140px;
 }
 
@@ -193,13 +196,13 @@ footer {
     background-color: white;
     color: #272a31;
     padding-left: 200px;
+    padding-right: 200px;
     margin-left: auto;
   }
 
   .navbar-top,
   .navbar-bottom {
     margin-right: auto;
-    padding-right: 200px;
     width: 100%;
   }
 

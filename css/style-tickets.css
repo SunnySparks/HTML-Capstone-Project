@@ -24,6 +24,10 @@ main {
 
 /* First container */
 
+.toggler-top {
+  margin-left: auto;
+}
+
 .top-background {
   background-image: url("../img/bg-gray2.png");
   background-repeat: no-repeat;
@@ -110,12 +114,13 @@ main {
 
 .ticket-table {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas:
-    "ta tb tc"
-    "pa pb pc";
+  grid-template-areas: 
+  "ta pa" 
+  "tb pb" 
+  "tc pc";
   border: 10px solid;
   border-image-source: url("../img/diagonal.jpg");
   border-image-slice: 40 42;
@@ -123,27 +128,50 @@ main {
   margin-bottom: 40px;
 }
 
-.ticket-table p,
-.ticket-table label {
-  margin-top: 10px;
-  margin-left: 25px;
+.pass-1 {
+  grid-area: ta;
 }
 
-.ticket-table input {
-  margin-top: 15px;
-  margin-left: 10px;
+.pass-2 {
+  grid-area: tb;
 }
 
-.pass-2,
+.pass-3 {
+  grid-area: tc;
+}
+
+.price-1 {
+  grid-area: pa;
+}
+
 .price-2 {
-  border-left: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
+  grid-area: pb;
+}
+
+.price-3 {
+  grid-area: pc;
 }
 
 .price-1,
 .price-2,
 .price-3 {
+  border-left: 1px solid #d3d3d3;
+}
+
+.pass-1,
+.pass-2,
+.pass-3,
+.price-1,
+.price-2,
+.price-3 {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.pass-2,
+.price-2 {
   border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .middle-bottom-section {
@@ -240,13 +268,13 @@ footer {
     background-color: white;
     color: #272a31;
     padding-left: 200px;
+    padding-right: 200px;
     margin-left: auto;
   }
 
   .navbar-top,
   .navbar-bottom {
     margin-right: auto;
-    padding-right: 200px;
     width: 100%;
   }
 
@@ -286,4 +314,37 @@ footer {
   .step {
     text-align: center;
   }
+
+  .ticket-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      "ta tb tc"
+      "pa pb pc";
+  }
+
+.ticket-table p,
+.ticket-table label {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.ticket-table input {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.pass-2,
+.pass-3 {
+  border-bottom: 0;
+  border-left: 1px solid #d3d3d3;
+}
+
+.price-1,
+.price-3 {
+  border-top: 1px solid #d3d3d3;
+}
+
 }
