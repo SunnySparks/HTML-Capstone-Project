@@ -288,21 +288,6 @@ footer {
     margin-bottom: 80px;
   }
 
-  .botton-tickets {
-    border: 5px solid #ec5242;
-    color: #ec5242;
-    padding: 10px 32px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 12px;
-  }
-
-  .botton-tickets .ticket-table {
-    background-color: white;
-    text-align: center;
-  }
-
   .sub-nav {
     color: #272a31;
   }
@@ -334,6 +319,21 @@ footer {
   .ticket-table input {
     margin-top: 15px;
     margin-left: 10px;
+  }
+
+  .botton-tickets {
+    border: 5px solid #ec5242;
+    color: #ec5242;
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .botton-tickets .ticket-table {
+    background-color: white;
+    text-align: center;
   }
 
   .pass-2,
