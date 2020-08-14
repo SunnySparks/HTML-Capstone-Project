@@ -61,6 +61,7 @@ main {
   padding: 10px;
 }
 
+
 .event-date {
   color: #272a31;
 }
@@ -84,7 +85,7 @@ main {
   margin-top: 10px;
   display: block;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .method,
@@ -113,19 +114,24 @@ main {
 }
 
 .ticket-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas:
     "ta pa"
     "tb pb"
     "tc pc";
+  margin-bottom: 40px;
+}
+
+.ticket-table,
+.ticket-table-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px 1px;
   border: 10px solid;
   border-image-source: url("../img/diagonal.jpg");
   border-image-slice: 40 42;
   border-image-repeat: repeat;
-  margin-bottom: 40px;
 }
 
 .pass-1 {
@@ -188,57 +194,72 @@ main {
   margin-right: 250px;
 }
 
-.form-bottom {
-  display: grid;
-  grid-template-columns: 0.1fr 0.6fr;
+.ticket-table-2 {
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 1px 1px;
   grid-template-areas:
-    "ra ia"
-    "rb ib"
-    "rc ic"
-    "rd id";
-  max-height: 40px;
+    "wa ra"
+    "wb rb"
+    "wc rc"
+    "wd rd";
 }
 
-.input-a,
-.input-b,
-.input-c,
-.input-d {
-  min-width: 130px;
-  max-width: 200px;
+.wknd-1,
+.rad-1,
+.wknd-2,
+.rad-2,
+.wknd-3,
+.rad-3,
+.wknd-4,
+.rad-4  {
+  padding-top: 5px;
 }
 
-.radio-a {
+.wknd-1,
+.wknd-2,
+.wknd-3,
+.wknd-4 {
+  border-right: 1px solid #d3d3d3;
+}
+
+.wknd-2,
+.rad-2,
+.wknd-3,
+.rad-3,
+.wknd-4,
+.rad-4 {
+  border-top: 1px solid #d3d3d3;
+}
+
+.wknd-1 {
+  grid-area: wa;
+}
+
+.wknd-2 {
+  grid-area: wb;
+}
+
+.wknd-3 {
+  grid-area: wc;
+}
+
+.wknd-4 {
+  grid-area: wd;
+}
+
+.rad-1 {
   grid-area: ra;
 }
 
-.input-a {
-  grid-area: ia;
-}
-
-.radio-b {
+.rad-2 {
   grid-area: rb;
 }
 
-.input-b {
-  grid-area: ib;
-}
-
-.radio-c {
+.rad-3 {
   grid-area: rc;
 }
 
-.input-c {
-  grid-area: ic;
-}
-
-.radio-d {
+.rad-4 {
   grid-area: rd;
-}
-
-.input-d {
-  grid-area: id;
 }
 
 footer {
@@ -301,13 +322,17 @@ footer {
   }
 
   .ticket-table {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    gap: 1px 1px;
     grid-template-areas:
       "ta tb tc"
       "pa pb pc";
+  }
+
+  .ticket-table,
+  .ticket-table-2 {
+    display: grid;
+    gap: 1px 1px;
+    grid-template-rows: 0.5fr 1fr;
   }
 
   .ticket-table p,
@@ -331,19 +356,45 @@ footer {
     font-size: 12px;
   }
 
-  .botton-tickets .ticket-table {
+  .botton-tickets,
+  .ticket-table {
     background-color: white;
     text-align: center;
   }
 
-  .pass-2,
-  .pass-3 {
-    border-bottom: 0;
-    border-left: 1px solid #d3d3d3;
+  .ticket-table-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "wa wb wc wd"
+      "ra rb rc rd";
   }
 
-  .price-1,
-  .price-3 {
-    border-top: 1px solid #d3d3d3;
-  }
+.wknd-2,
+.wknd-3,
+.wknd-4,
+.rad-2,
+.rad-3,
+.rad-4 {
+  border-left: 1px solid #d3d3d3;
+}
+
+.rad-1,
+.rad-2,
+.rad-3,
+.rad-4 {
+  border-top: 1px solid #d3d3d3;
+}
+
+.wknd-1,
+.wknd-2,
+.wknd-3,
+.wknd-4 {
+  border-right: 0;
+}
+
+.wknd-2,
+.wknd-3,
+.wknd-4 {
+  border-top: 0;
+}
 }
