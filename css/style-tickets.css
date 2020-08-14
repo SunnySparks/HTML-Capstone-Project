@@ -320,6 +320,38 @@ footer {
     text-align: center;
   }
 
+  .price-1,
+  .price-2,
+  .price-3 {
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .pass-1,
+  .pass-2,
+  .pass-3,
+  .price-1,
+  .price-2,
+  .price-3 {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  .pass-2,
+  .price-2 {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 0;
+  }
+
+  .pass-2 {
+    border-top: 0;
+  }
+
+  .price-1,
+  .price-3 {
+    border-left: 0;
+  }
+
   .ticket-table {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
