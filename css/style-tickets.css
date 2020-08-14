@@ -61,7 +61,6 @@ main {
   padding: 10px;
 }
 
-
 .event-date {
   color: #272a31;
 }
@@ -210,7 +209,7 @@ main {
 .wknd-3,
 .rad-3,
 .wknd-4,
-.rad-4  {
+.rad-4 {
   padding-top: 5px;
 }
 
@@ -369,32 +368,32 @@ footer {
       "ra rb rc rd";
   }
 
-.wknd-2,
-.wknd-3,
-.wknd-4,
-.rad-2,
-.rad-3,
-.rad-4 {
-  border-left: 1px solid #d3d3d3;
-}
+  .wknd-2,
+  .wknd-3,
+  .wknd-4,
+  .rad-2,
+  .rad-3,
+  .rad-4 {
+    border-left: 1px solid #d3d3d3;
+  }
 
-.rad-1,
-.rad-2,
-.rad-3,
-.rad-4 {
-  border-top: 1px solid #d3d3d3;
-}
+  .rad-1,
+  .rad-2,
+  .rad-3,
+  .rad-4 {
+    border-top: 1px solid #d3d3d3;
+  }
 
-.wknd-1,
-.wknd-2,
-.wknd-3,
-.wknd-4 {
-  border-right: 0;
-}
+  .wknd-1,
+  .wknd-2,
+  .wknd-3,
+  .wknd-4 {
+    border-right: 0;
+  }
 
-.wknd-2,
-.wknd-3,
-.wknd-4 {
-  border-top: 0;
-}
+  .wknd-2,
+  .wknd-3,
+  .wknd-4 {
+    border-top: 0;
+  }
 }
