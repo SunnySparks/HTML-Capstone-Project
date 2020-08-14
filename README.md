@@ -24,7 +24,7 @@ And there are 3 HTML files to explore:
 
 - [Live Demo Link](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/index.html)
 - [About webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/about.html)
-- [Tickets webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/feature-branch/tickets.html)
+- [Tickets webpage](https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/tickets.html)
 
 ## Website video demonstration
 
