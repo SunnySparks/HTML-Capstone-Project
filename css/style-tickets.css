@@ -1,0 +1,431 @@
+@font-face { font-family: Cocogoose; src: url('../font/cocogoose_trial-webfont.woff'); }
+
+@font-face { font-family: Cocogoose; font-weight: bold; src: url('../font/cocogoose_trial-webfont.woff2'); }
+
+.coco {
+  font-family: Cocogoose, sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Body, header and main */
+header {
+  height: auto;
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: #d3d3d3;
+}
+
+/* First container */
+
+.toggler-top {
+  margin-left: auto;
+}
+
+.top-background {
+  background-image: url("../img/bg-gray2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.dark-color {
+  color: #272a31;
+}
+
+.fa-1x {
+  font-size: 1.5rem;
+}
+
+.header-sub,
+.header-title {
+  background-image: url("../img/rorange.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.box {
+  border: 1px solid white;
+  margin-top: 30px;
+  font-size: 0.7em;
+  line-height: 20px;
+  background: #d3d3d3;
+  padding: 10px;
+}
+
+.event-date {
+  color: #272a31;
+}
+
+.where {
+  font-size: 0.9em;
+}
+
+.where a {
+  color: #272a31;
+  font-weight: bold;
+}
+
+.middle-section {
+  background-color: white;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.about-the-logo,
+.logo-info {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.method,
+.days {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.orange {
+  width: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 0.5px;
+  background-color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.step {
+  border: 1px solid #d3d3d3;
+  border-radius: 25px;
+}
+
+.logo {
+  text-align: start;
+  color: #ec5242;
+}
+
+.ticket-table {
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "ta pa"
+    "tb pb"
+    "tc pc";
+  margin-bottom: 40px;
+}
+
+.ticket-table,
+.ticket-table-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px 1px;
+  border: 10px solid;
+  border-image-source: url("../img/diagonal.jpg");
+  border-image-slice: 40 42;
+  border-image-repeat: repeat;
+}
+
+.pass-1 {
+  grid-area: ta;
+}
+
+.pass-2 {
+  grid-area: tb;
+}
+
+.pass-3 {
+  grid-area: tc;
+}
+
+.price-1 {
+  grid-area: pa;
+}
+
+.price-2 {
+  grid-area: pb;
+}
+
+.price-3 {
+  grid-area: pc;
+}
+
+.price-1,
+.price-2,
+.price-3 {
+  border-left: 1px solid #d3d3d3;
+}
+
+.pass-1,
+.pass-2,
+.pass-3,
+.price-1,
+.price-2,
+.price-3 {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.pass-2,
+.price-2 {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.middle-bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.ticket-table-2 {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "wa ra"
+    "wb rb"
+    "wc rc"
+    "wd rd";
+}
+
+.wknd-1,
+.rad-1,
+.wknd-2,
+.rad-2,
+.wknd-3,
+.rad-3,
+.wknd-4,
+.rad-4 {
+  padding-top: 5px;
+}
+
+.wknd-1,
+.wknd-2,
+.wknd-3,
+.wknd-4 {
+  border-right: 1px solid #d3d3d3;
+}
+
+.wknd-2,
+.rad-2,
+.wknd-3,
+.rad-3,
+.wknd-4,
+.rad-4 {
+  border-top: 1px solid #d3d3d3;
+}
+
+.wknd-1 {
+  grid-area: wa;
+}
+
+.wknd-2 {
+  grid-area: wb;
+}
+
+.wknd-3 {
+  grid-area: wc;
+}
+
+.wknd-4 {
+  grid-area: wd;
+}
+
+.rad-1 {
+  grid-area: ra;
+}
+
+.rad-2 {
+  grid-area: rb;
+}
+
+.rad-3 {
+  grid-area: rc;
+}
+
+.rad-4 {
+  grid-area: rd;
+}
+
+footer {
+  display: flex;
+  background: #272a31;
+  height: 200px;
+  font-size: small;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+@media (min-width: 768px) {
+  /* Body, header and main */
+  header {
+    display: block;
+  }
+
+  .navbar-top {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #272a31;
+  }
+
+  .navbar-bottom {
+    background-color: white;
+    color: #272a31;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+  }
+
+  .navbar-top,
+  .navbar-bottom {
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .council {
+    height: 40px;
+    margin-right: 100px;
+  }
+
+  .main-cont {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .sub-nav {
+    color: #272a31;
+  }
+
+  .sub-nav:hover {
+    color: #ec5242;
+  }
+
+  .step {
+    text-align: center;
+  }
+
+  .price-1,
+  .price-2,
+  .price-3 {
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .pass-1,
+  .pass-2,
+  .pass-3,
+  .price-1,
+  .price-2,
+  .price-3 {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  .pass-2,
+  .price-2 {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 0;
+  }
+
+  .pass-2 {
+    border-top: 0;
+  }
+
+  .price-1,
+  .price-3 {
+    border-left: 0;
+  }
+
+  .ticket-table {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "ta tb tc"
+      "pa pb pc";
+  }
+
+  .ticket-table,
+  .ticket-table-2 {
+    display: grid;
+    gap: 1px 1px;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .ticket-table p,
+  .ticket-table label {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  .ticket-table input {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .botton-tickets {
+    border: 5px solid #ec5242;
+    color: #ec5242;
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .botton-tickets,
+  .ticket-table {
+    background-color: white;
+    text-align: center;
+  }
+
+  .ticket-table-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "wa wb wc wd"
+      "ra rb rc rd";
+  }
+
+  .wknd-2,
+  .wknd-3,
+  .wknd-4,
+  .rad-2,
+  .rad-3,
+  .rad-4 {
+    border-left: 1px solid #d3d3d3;
+  }
+
+  .rad-1,
+  .rad-2,
+  .rad-3,
+  .rad-4 {
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .wknd-1,
+  .wknd-2,
+  .wknd-3,
+  .wknd-4 {
+    border-right: 0;
+  }
+
+  .wknd-2,
+  .wknd-3,
+  .wknd-4 {
+    border-top: 0;
+  }
+}

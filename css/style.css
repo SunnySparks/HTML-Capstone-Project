@@ -1,0 +1,583 @@
+@font-face { font-family: Cocogoose; src: url('../font/cocogoose_trial-webfont.woff'); }
+
+@font-face { font-family: Cocogoose; font-weight: bold; src: url('../font/cocogoose_trial-webfont.woff2'); }
+
+.coco {
+  font-family: Cocogoose, sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Body, header and main */
+body {
+  height: 100%;
+}
+
+header {
+  height: auto;
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: #d3d3d3;
+}
+
+/* First container */
+.toggler-top {
+  margin-left: auto;
+}
+
+.top-background {
+  background-image: url("../img/bg-gray2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.dark-color {
+  color: #272a31;
+}
+
+.fa-1x {
+  font-size: 1.5rem;
+}
+
+.header-sub,
+.header-title {
+  background-image: url("../img/rorange.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.box {
+  border: 1px solid white;
+  margin-top: 30px;
+  font-size: 0.8em;
+  line-height: 20px;
+  background: #d3d3d3;
+  padding: 10px;
+}
+
+.event-date {
+  color: #272a31;
+}
+
+.where {
+  font-size: 0.9em;
+}
+
+/* Second container */
+
+.gray-background {
+  background-image: url("../img/gray3.png");
+  background-position: center;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 42, 49, 0.8);
+  z-index: -2;
+}
+
+.method {
+  text-align: center;
+  padding-top: 30px;
+  z-index: 50;
+}
+
+.orange {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ec5242;
+}
+
+.orange,
+.barrita {
+  height: 0.5px;
+  margin-bottom: 10px;
+  width: 25px;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cont-method {
+  width: 100%;
+  padding: 10px;
+  background: rgba(211, 211, 211, 0.1);
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "i h t";
+  justify-content: center;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5rem;
+  grid-area: i;
+}
+
+.cont-method h5 {
+  color: #ec5242;
+  grid-area: h;
+}
+
+.icon,
+.cont-method h6 {
+  align-self: center;
+  flex: 1 1 auto;
+  opacity: 1;
+}
+
+.cont-text {
+  font-size: 0.8em;
+  opacity: 1;
+  flex: 2 1 auto;
+  align-self: center;
+  grid-area: t;
+}
+
+.botoncito {
+  display: flex;
+  width: 60%;
+  margin: 0 auto 10px;
+  border-radius: 0;
+  background-color: #ec5242;
+}
+
+.botoncito a {
+  color: white;
+}
+
+.whole-program {
+  display: none;
+}
+
+.whole-program p {
+  font-size: 1em;
+}
+
+/* THIS IS THE GUESTS SECTION */
+
+.guest-section {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meet-our-guests {
+  display: block;
+}
+
+.guests {
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "b t";
+}
+
+.pictures-cont {
+  grid-area: b;
+  min-height: 120px;
+  max-width: 165px;
+}
+
+.checkers {
+  height: 45px;
+  width: 45px;
+  background-image: url("../img/checker.jpg");
+  right: 60px;
+  bottom: 15px;
+}
+
+.img-background {
+  height: 95px;
+  width: 95px;
+  bottom: 50px;
+}
+
+.gray-background,
+.checkers,
+.img-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.checkers,
+.img-background {
+  float: right;
+}
+
+.guest {
+  grid-area: t;
+  display: flex;
+  flex-direction: column;
+}
+
+.guest h6 {
+  font-size: 0.8rem;
+}
+
+.guest-info {
+  color: #ec5242;
+  font-size: small;
+}
+
+.barrita {
+  background-color: #272a31;
+  text-align: left;
+  display: flex;
+  margin-left: 0;
+}
+
+.more-info {
+  font-size: xx-small;
+  margin-top: 10px;
+}
+
+.botton-more {
+  border: 1px solid #d3d3d3;
+  color: #272a31;
+  margin: 10px 2px 20px 2px;
+}
+
+.botton-more,
+.botton-tickets {
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  color: #ec5242;
+}
+
+.yoona {
+  background-image: url("../img/yoona.jpg");
+  background-position: top;
+}
+
+.harold {
+  background-image: url("../img/harold.jpg");
+  background-position: right;
+}
+
+.camila {
+  background-image: url("../img/camila.jpg");
+  background-position: top;
+}
+
+.hugo {
+  background-image: url("../img/hugo.jpg");
+  background-position: top;
+}
+
+.omar {
+  background-image: url("../img/omar.jpeg");
+  background-position: top;
+}
+
+.pryanka {
+  background-image: url("../img/pryanka.jpg");
+  background-position: top;
+}
+
+.guests-2 {
+  display: none;
+}
+
+/* Footer */
+
+.partner {
+  display: block;
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.partner-pic img {
+  filter: grayscale();
+}
+
+.partner-pic {
+  filter: grayscale();
+}
+
+.alliance,
+.b-counsil,
+.cervantes,
+.duo,
+.italki {
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  background: white;
+  height: 200px;
+  font-size: small;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+/* M E D I A  Q U E R Y */
+@media (min-width: 768px) {
+  /* Body, header and main */
+  header {
+    display: block;
+  }
+
+  .navbar-top {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #272a31;
+  }
+
+  .navbar-bottom {
+    background-color: white;
+    color: #272a31;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+  }
+
+  .navbar-top,
+  .navbar-bottom {
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .council {
+    height: 40px;
+    margin-right: 100px;
+  }
+
+  .botton-tickets {
+    border: 5px solid #ec5242;
+    color: #ec5242;
+  }
+
+  .sub-nav {
+    color: #272a31;
+  }
+
+  .sub-nav:hover {
+    color: #ec5242;
+  }
+
+  .main-cont {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  /* Middle container and guests container */
+
+  .gray-header {
+    display: block;
+  }
+
+  .containers {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: stretch;
+  }
+
+  .cont-method {
+    padding: 10px;
+    background: rgba(211, 211, 211, 0.1);
+    flex-direction: column;
+    margin: 2px;
+    text-align: center;
+  }
+
+  .cont-method,
+  .containers {
+    display: flex;
+  }
+
+  .botoncito {
+    display: none;
+  }
+
+  .whole-program {
+    display: inline;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .gray-background {
+    height: 350px;
+  }
+
+  .meet-our-guests {
+    display: none;
+  }
+
+  .meet-our-guests-2 {
+    margin-bottom: 80px;
+  }
+
+  .guests {
+    display: none;
+  }
+
+  .botton-more {
+    display: none;
+  }
+
+  .guests-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+      "ga gd"
+      "gb ge"
+      "gc gf";
+  }
+
+  .pictures-cont {
+    grid-area: b;
+    min-height: 150px;
+    max-width: 130px;
+    margin: 10px;
+  }
+
+  .guest h6 {
+    font-size: 1.2rem;
+  }
+
+  .guest-info {
+    color: #ec5242;
+    font-size: small;
+  }
+
+  .barrita {
+    background-color: #d3d3d3;
+  }
+
+  .more-info {
+    font-size: x-small;
+    margin-top: 10px;
+  }
+
+  .ga {
+    grid-area: ga;
+  }
+
+  .gb {
+    grid-area: gb;
+  }
+
+  .gc {
+    grid-area: gc;
+  }
+
+  .gd {
+    grid-area: gd;
+  }
+
+  .ge {
+    grid-area: ge;
+  }
+
+  .gf {
+    grid-area: gf;
+  }
+
+  .partner {
+    display: block;
+    background-color: #272a31;
+    color: #d3d3d3;
+  }
+
+  .partners-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3px 1px;
+    grid-template-areas: "pa pb pc pd pe";
+  }
+
+  .partner-pic {
+    display: grid;
+  }
+
+  .partner-pic img {
+    filter: grayscale();
+  }
+
+  .alliance {
+    grid-area: pa;
+    height: 100px;
+  }
+
+  .b-counsil {
+    grid-area: pb;
+    height: 60px;
+  }
+
+  .cervantes {
+    grid-area: pc;
+    height: 80px;
+  }
+
+  .duo {
+    grid-area: pd;
+    height: 50px;
+  }
+
+  .italki {
+    grid-area: pe;
+    height: 55px;
+  }
+
+  footer {
+    display: flex;
+    background: #d3d3d3;
+    height: 200px;
+  }
+}
